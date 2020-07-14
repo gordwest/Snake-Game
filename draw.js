@@ -14,7 +14,7 @@ var snake;
     snake = new Snake();
     fruit = new Fruit();
     fruit.pickLocation();
-    console.log(fruit);
+    //console.log(fruit);
 
     window.setInterval(() =>{
         ctx.clearRect(0, 0, canvas.width, canvas.height);
@@ -32,6 +32,6 @@ var snake;
 
 window.addEventListener('keydown', ((event) => {
     const direction = event.key.replace('Arrow', '');
-    console.log(direction);
+    //console.log(direction);
     snake.changeDirection(direction);
 }))
