@@ -2,11 +2,10 @@ const canvas = document.querySelector(".canvas");
 const ctx = canvas.getContext("2d");
 var mm = document.getElementById("mm");
 var poggers = document.getElementById("pog");
-const scale = 40;
+const scale = 50;
 const interval = 150;
 const rows = canvas.height / scale;
 const cols = canvas.width / scale;
-
 var snake;
 
 (function setup() {
@@ -24,10 +23,7 @@ var snake;
         if (snake.eat(fruit)){
             fruit.pickLocation();
         }
-        if (snake.collision()) {
-            window.clearInterval(timer);
-            snake.gameover();
-        }
+        snake.checkCollision();
     }, interval);
 }());
 

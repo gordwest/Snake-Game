@@ -53,24 +53,6 @@ function Snake() {
         }
     }
 
-    // check for snake collision
-    this.collision = function() {
-        for (var i=0; i < this.tail.length; i++) {
-            if (this.y === this.tail[i].y && this.x === this.tail[i].x) {
-                console.log('Crashed')
-                return true
-            }
-            return false
-        }
-    }
-
-    // call when player dies
-    this.gameover = function() {
-        ctx.font = "40px Arial";
-	    ctx.fillStyle = "red";
-	    ctx.fillText("GAME OVER!", canvas.width/2.5, canvas.height/3);
-    }
-
     // update snake direction based on key events
     this.changeDirection = function(direction) {
         switch(direction){
@@ -112,5 +94,17 @@ function Snake() {
             return true;
         }
         return false;
+    }
+
+    // check for snake collision
+    this.checkCollision = function() {
+        for (var i=0; i < this.tail.length; i++) {
+            if (this.x == this.tail[i].x && this.y == this.tail[i].y) {
+                console.log("Crashed")
+                // reset snake on collision
+                this.total = 0;
+                this.tail = [];
+            }
+        }
     }
 }
