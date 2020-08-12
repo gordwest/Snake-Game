@@ -6,13 +6,6 @@ function Snake() {
     this.total = 0;
     this.tail = [];
 
-    // update score label
-    this.score = function() {
-        ctx.font = "25px Arial";
-	    ctx.fillStyle = "black";
-	    ctx.fillText("Score: " + this.total.toString(), 5, 25);
-    }
-
     // draw snake on canvas
     this.draw = function() {
         ctx.fillStyle = "#008000";

@@ -1,6 +1,6 @@
 # Snake Game
 
-#### Nothing special here, just my attempt at making the classic snake game in Javascript
+#### My attempt at making the classic snake game in Javascript
 
 ## Made with the help of
 - Youtube channel [CodeWithKris](https://www.youtube.com/channel/UCWkzkhQ3syxBjjAYwqCbzYg)
@@ -13,7 +13,7 @@
 - Control snake with arrow keys
 - Eat snacks and grow longer in length
 - Keep track of score
+- Handles snake collision (no collision with walls)
 
 ## Goals
-- Add unit collision
 - System to track highscores
