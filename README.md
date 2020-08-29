@@ -1,6 +1,6 @@
 # Snake Game
 
-#### My attempt at making the classic snake game in Javascript
+#### My attempt at making the classic snake game in Javascript. Play it [here!](http://gordwest.com/snake_game/index)
 
 ## Made with the help of
 - Youtube channel [CodeWithKris](https://www.youtube.com/channel/UCWkzkhQ3syxBjjAYwqCbzYg)
